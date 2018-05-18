@@ -1,0 +1,95 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>INTRO TO BOOTSTRAP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--must put the "ajax" script before the "bootstrap.min.js", if not the collape will not work!!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- TO READ THE LINKS IN THE ARTICLE !!! -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top"> <!--"navbar-inverse" make black navbar-->
+    <div class="container-fluid"> <!--"container-fluid" provides FULL WIDTH CONTAINER,"container" is FIXED WIDTH CONTAINER-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNav">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">My site</a> <!--navbar-brand is for the project name-->
+      </div>
+      <div class="collapse navbar-collapse" id="MyNav"> <!--navbar-collapse make collapse TAFRIT(the navbar)-->
+        <ul class="nav navbar-nav">
+          <li> <a href="#">Home</a> </li> <!--class="active" just make the name of the "li Tag" line i press on him-->
+          <li> <a href="#services">Services</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To My Site!</div>
+                <div class="intro-heading">It's Nice To Meet You</div>
+                <button class="btn btn-primary">Tell Me More</button>
+            </div>
+        </div>
+    </header>
+       <!-- PARTNER EXERCISE 1
+        add the title of the "Services" section and the subtitle below it.
+        Refer back to the top of the lesson for how it should look.
+        Do your best to add as little of your own CSS as possible, just use Bootstrap classes.
+        -->
+    <section id="services">
+        <div class="container">
+            <div class="row text-center"> <!--center for all things include the columns-->
+                <!--Partner exercise 1-->
+                <div class="col-lg-12 text-center"> <!--center the heading text-->
+                    <div class="heading-services">Services</div>
+                    <div class="intro-services">Here Some Of My Services</div>
+                </div>
+                <!--Partner exercise 1-->
+
+                <!-- first column -->
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x"> <!--To stack multiple icons, use the fa-stack-->
+                        <i class="fa fa-circle fa-stack-2x"></i><!--circle icons-->
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i><!--shopping-cart icons-->
+                    </span>
+                    <h4>E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <!-- second column -->
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4>Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <!-- third column -->
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4>Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div> <!--class="row-->
+        </div> <!--class="container"-->
+    </section>
+     
+</body>
+</html>
